@@ -1,0 +1,60 @@
+media: media
+
+content:
+  - name: obsah
+    label: Texty webu
+    type: file
+    path: content.json
+    fields:
+      - name: hero_before
+        label: "Úvod – text před zvýrazněním"
+        type: string
+      - name: hero_highlight
+        label: "Úvod – zvýrazněné slovo (zeleně)"
+        type: string
+      - name: hero_after
+        label: "Úvod – text za zvýrazněním"
+        type: string
+      - name: hero_lead
+        label: "Úvod – podnadpis"
+        type: text
+      - name: product_title
+        label: "Název hradu"
+        type: string
+      - name: product_desc
+        label: "Popis hradu"
+        type: text
+      - name: price
+        label: "Cena"
+        type: string
+      - name: price_unit
+        label: "Cena – jednotka (např. s DPH / 1 den)"
+        type: string
+      - name: price_note
+        label: "Poznámka pod cenou"
+        type: text
+      - name: spec_rozmer
+        label: "Parametr – Rozměr"
+        type: string
+      - name: spec_cert
+        label: "Parametr – Certifikace"
+        type: string
+      - name: spec_soucasti
+        label: "Parametr – Součástí"
+        type: string
+      - name: spec_doporuceni
+        label: "Parametr – Doporučení výrobce"
+        type: string
+      - name: faq
+        label: "Časté dotazy (FAQ)"
+        type: object
+        list:
+          collapsible:
+            summary: "{otazka}"
+        fields:
+          - name: otazka
+            label: "Otázka"
+            type: string
+          - name: odpoved
+            label: "Odpověď"
+            type: text
