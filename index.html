@@ -122,6 +122,7 @@
       "description": "Nafukovací skákací hrad s motivem farmy, skluzavkou a překážkami. Rozměr 5,7 × 5,2 × 5 m, certifikace ČSN EN 14960. K pronájmu v Jičíně a okolí.",
       "sku": "NN748",
       "category": "Pronájem skákacích hradů",
+      "weight": {"@type": "QuantitativeValue", "value": "170", "unitCode": "KGM"},
       "image": [
         "https://data.ambitent.cz/photo/product_gallery/6359/skakaci-hrad-farma-se-skluzavkou-a-prekazkami.desktop?1780393736",
         "https://data.ambitent.cz/photo/product_gallery/6360/nafukovaci-skakaci-hrad-farma-na-detske-zahradni-akci.desktop?1780394027",
@@ -387,6 +388,19 @@
   .form-msg p{color:var(--muted)}
   .hp{position:absolute;left:-9999px;opacity:0}
   @media(max-width:480px){.row2{grid-template-columns:1fr}}
+
+  /* Lightbox galerie */
+  .zoomable{cursor:zoom-in}
+  .lightbox{position:fixed;inset:0;z-index:120;background:rgba(20,22,26,.94);backdrop-filter:blur(4px);display:none;align-items:center;justify-content:center;padding:20px}
+  .lightbox.open{display:flex}
+  .lightbox img{max-width:92vw;max-height:86vh;object-fit:contain;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.5);user-select:none}
+  .lb-btn{position:absolute;background:rgba(255,255,255,.14);color:#fff;border:none;cursor:pointer;width:52px;height:52px;border-radius:50%;font-size:1.9rem;line-height:1;display:flex;align-items:center;justify-content:center;transition:background .15s}
+  .lb-btn:hover{background:rgba(255,255,255,.3)}
+  .lb-close{top:20px;right:20px;font-size:1.7rem}
+  .lb-prev{left:18px;top:50%;transform:translateY(-50%)}
+  .lb-next{right:18px;top:50%;transform:translateY(-50%)}
+  .lb-counter{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:#fff;font-weight:600;font-size:.92rem;background:rgba(0,0,0,.45);padding:6px 14px;border-radius:50px}
+  @media(max-width:600px){.lb-btn{width:44px;height:44px;font-size:1.5rem}.lb-prev{left:8px}.lb-next{right:8px}}
 </style>
 </head>
 <body>
@@ -446,7 +460,7 @@
       </div>
     </div>
     <div class="hero-img">
-      <img src="https://data.ambitent.cz/photo/product_gallery/6360/nafukovaci-skakaci-hrad-farma-na-detske-zahradni-akci.desktop?1780394027" alt="Nafukovací skákací hrad FARMA se skluzavkou na dětské akci v Jičíně" width="1000" height="700" loading="eager" fetchpriority="high" decoding="async">
+      <img class="zoomable" src="https://data.ambitent.cz/photo/product_gallery/6360/nafukovaci-skakaci-hrad-farma-na-detske-zahradni-akci.desktop?1780394027" alt="Nafukovací skákací hrad FARMA se skluzavkou na dětské akci v Jičíně" width="1000" height="700" loading="eager" fetchpriority="high" decoding="async">
     </div>
   </div>
 </section>
@@ -456,9 +470,9 @@
   <div class="wrap">
     <div class="product">
       <div class="gallery">
-        <img src="https://data.ambitent.cz/photo/product_gallery/6359/skakaci-hrad-farma-se-skluzavkou-a-prekazkami.desktop?1780393736" alt="Nafukovací skákací hrad FARMA se skluzavkou – přední pohled" width="600" height="400" loading="lazy" decoding="async">
-        <img src="https://data.ambitent.cz/photo/product_gallery/6362/nafukovaci-skakaci-hrad-farma-atraktivni-motiv.desktop?1780398491" alt="Skákací hrad FARMA – barevný farmářský motiv se zvířátky" width="600" height="400" loading="lazy" decoding="async">
-        <img src="https://data.ambitent.cz/photo/product_gallery/6363/nafukovaci-skakaci-hrad-farma-zadni-pohled.desktop?1780398575" alt="Skákací hrad FARMA – zadní pohled se skluzavkou" width="600" height="400" loading="lazy" decoding="async">
+        <img class="zoomable" src="https://data.ambitent.cz/photo/product_gallery/6359/skakaci-hrad-farma-se-skluzavkou-a-prekazkami.desktop?1780393736" alt="Nafukovací skákací hrad FARMA se skluzavkou – přední pohled" width="600" height="400" loading="lazy" decoding="async">
+        <img class="zoomable" src="https://data.ambitent.cz/photo/product_gallery/6362/nafukovaci-skakaci-hrad-farma-atraktivni-motiv.desktop?1780398491" alt="Skákací hrad FARMA – barevný farmářský motiv se zvířátky" width="600" height="400" loading="lazy" decoding="async">
+        <img class="zoomable" src="https://data.ambitent.cz/photo/product_gallery/6363/nafukovaci-skakaci-hrad-farma-zadni-pohled.desktop?1780398575" alt="Skákací hrad FARMA – zadní pohled se skluzavkou" width="600" height="400" loading="lazy" decoding="async">
       </div>
       <div>
         <p class="kicker">Aktuální nabídka</p>
@@ -471,6 +485,7 @@
         <p class="price-note" data-cms="price_note">Cenu dopravy a montáže upřesníme podle místa a typu akce. Pro obce a firmy připravíme nabídku na míru.</p>
         <ul class="specs">
           <li><span>Rozměr</span><span data-cms="spec_rozmer">5,7 × 5,2 × 5 m</span></li>
+          <li><span>Hmotnost</span><span data-cms="spec_hmotnost">170 kg</span></li>
           <li><span>Certifikace</span><span data-cms="spec_cert">ČSN EN 14960</span></li>
           <li><span>Součástí</span><span data-cms="spec_soucasti">dmychadlo, vak, kotvení, dokumentace</span></li>
           <li><span>Doporučení výrobce</span><span data-cms="spec_doporuceni">děti 4–12 let, 6–8 dětí</span></li>
@@ -725,6 +740,15 @@
   </div>
 </div>
 
+<!-- LIGHTBOX galerie -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie fotek skákacího hradu">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Zavřít">×</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Předchozí fotka">‹</button>
+  <img id="lbImg" src="" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Další fotka">›</button>
+  <div class="lb-counter" id="lbCounter"></div>
+</div>
+
 <script>
 (function(){
   // Načtení editovatelných textů z content.json (Pages CMS)
@@ -781,6 +805,30 @@
         document.getElementById('formError').style.display='block';
       });
   });
+
+  // Lightbox galerie fotek
+  var zoomables=Array.prototype.slice.call(document.querySelectorAll('.zoomable'));
+  if(zoomables.length){
+    var lb=document.getElementById('lightbox');
+    var lbImg=document.getElementById('lbImg');
+    var lbCounter=document.getElementById('lbCounter');
+    var photos=zoomables.map(function(im){return {src:im.currentSrc||im.src, alt:im.alt||''};});
+    var idx=0;
+    function lbShow(i){idx=(i+photos.length)%photos.length;lbImg.src=photos[idx].src;lbImg.alt=photos[idx].alt;lbCounter.textContent=(idx+1)+' / '+photos.length;}
+    function lbOpen(i){lbShow(i);lb.classList.add('open');document.body.style.overflow='hidden';}
+    function lbClose(){lb.classList.remove('open');document.body.style.overflow='';}
+    zoomables.forEach(function(im,i){im.addEventListener('click',function(){lbOpen(i);});});
+    document.getElementById('lbClose').addEventListener('click',lbClose);
+    document.getElementById('lbPrev').addEventListener('click',function(e){e.stopPropagation();lbShow(idx-1);});
+    document.getElementById('lbNext').addEventListener('click',function(e){e.stopPropagation();lbShow(idx+1);});
+    lb.addEventListener('click',function(e){if(e.target===lb)lbClose();});
+    document.addEventListener('keydown',function(e){
+      if(!lb.classList.contains('open'))return;
+      if(e.key==='Escape')lbClose();
+      else if(e.key==='ArrowLeft')lbShow(idx-1);
+      else if(e.key==='ArrowRight')lbShow(idx+1);
+    });
+  }
 })();
 </script>
 
