@@ -90,9 +90,13 @@
         "longitude": 15.3517
       },
       "areaServed": [
-        {"@type": "City", "name": "Jičín"},
         {"@type": "AdministrativeArea", "name": "okres Jičín"},
-        {"@type": "State", "name": "Královéhradecký kraj"}
+        {"@type": "State", "name": "Královéhradecký kraj"},
+        {
+          "@type": "GeoCircle",
+          "geoMidpoint": {"@type": "GeoCoordinates", "latitude": 50.4369, "longitude": 15.3517},
+          "geoRadius": "100000"
+        }
       ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -539,8 +543,8 @@
   <div class="wrap">
     <div class="center">
       <p class="kicker">Kam dovezeme</p>
-      <h2 class="section-title">Skákací hrad do Jičína a okolí</h2>
-      <p class="section-sub">Skákací hrad dovezeme a postavíme v Jičíně i okolních obcích a městech. Nevidíte tu svou obec? Napište nám, rádi přijedeme.</p>
+      <h2 class="section-title">Skákací hrad do Jičína a okolí – až 100 km</h2>
+      <p class="section-sub">Skákací hrad dovezeme a postavíme v okruhu zhruba 100 km od Jičína – po celém Jičínsku i do okolních měst jako Hradec Králové, Mladá Boleslav, Turnov, Liberec či Pardubice. Cenu dopravy upřesníme podle vzdálenosti. Nevidíte tu svou obec? Napište nám, rádi přijedeme.</p>
     </div>
     <div class="uses">
       <div class="use">Jičín</div>
@@ -548,12 +552,20 @@
       <div class="use">Nová Paka</div>
       <div class="use">Lázně Bělohrad</div>
       <div class="use">Sobotka</div>
-      <div class="use">Libáň</div>
-      <div class="use">Kopidlno</div>
-      <div class="use">Železnice</div>
-      <div class="use">Valdice</div>
-      <div class="use">Miletín</div>
-      <div class="use">Ostroměř</div>
+      <div class="use">Turnov</div>
+      <div class="use">Mnichovo Hradiště</div>
+      <div class="use">Mladá Boleslav</div>
+      <div class="use">Hradec Králové</div>
+      <div class="use">Dvůr Králové n. L.</div>
+      <div class="use">Jaroměř</div>
+      <div class="use">Trutnov</div>
+      <div class="use">Semily</div>
+      <div class="use">Jilemnice</div>
+      <div class="use">Liberec</div>
+      <div class="use">Jablonec n. N.</div>
+      <div class="use">Pardubice</div>
+      <div class="use">Nymburk</div>
+      <div class="use">Poděbrady</div>
     </div>
   </div>
 </section>
@@ -644,8 +656,8 @@
             <input type="date" name="Termín od" required>
           </div>
           <div class="field">
-            <label>Termín akce – do</label>
-            <input type="date" name="Termín do">
+            <label>Termín akce – do <span class="req">*</span></label>
+            <input type="date" name="Termín do" required>
           </div>
         </div>
         <div class="field">
