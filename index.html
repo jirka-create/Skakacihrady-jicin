@@ -639,7 +639,7 @@
         <div class="row2">
           <div class="field">
             <label>Jméno a příjmení <span class="req">*</span></label>
-            <input type="text" name="Jméno" required placeholder="Jan Novák">
+            <input type="text" name="Jmeno a prijmeni" required placeholder="Jan Novák">
           </div>
           <div class="field">
             <label>Telefon <span class="req">*</span></label>
@@ -653,23 +653,23 @@
         <div class="row2">
           <div class="field">
             <label>Termín akce – od <span class="req">*</span></label>
-            <input type="date" name="Termín od" required>
+            <input type="date" name="Termin akce od" required>
           </div>
           <div class="field">
             <label>Termín akce – do <span class="req">*</span></label>
-            <input type="date" name="Termín do" required>
+            <input type="date" name="Termin akce do" required>
           </div>
         </div>
         <div class="field">
           <label>Způsob předání <span class="req">*</span></label>
           <div class="radio-group">
-            <label class="radio"><input type="radio" name="Způsob předání" value="Osobní vyzvednutí v Jičíně (zdarma)" checked> Vyzvednu si u vás v Jičíně&nbsp;<b>zdarma</b></label>
-            <label class="radio"><input type="radio" name="Způsob předání" value="Doprava na místo akce" id="optDoprava"> Chci přivézt na místo akce</label>
+            <label class="radio"><input type="radio" name="Zpusob predani" value="Osobní vyzvednutí v Jičíně (zdarma)" checked> Vyzvednu si u vás v Jičíně&nbsp;<b>zdarma</b></label>
+            <label class="radio"><input type="radio" name="Zpusob predani" value="Doprava na místo akce" id="optDoprava"> Chci přivézt na místo akce</label>
           </div>
         </div>
         <div class="field" id="mistoField" style="display:none">
           <label>Místo konání akce</label>
-          <input type="text" name="Místo konání" placeholder="Obec / adresa akce">
+          <input type="text" name="Misto konani akce" placeholder="Obec / adresa akce">
         </div>
         <div class="field">
           <label>Typ akce</label>
@@ -684,7 +684,7 @@
         </div>
         <div class="field">
           <label>Zpráva</label>
-          <textarea name="Zpráva" placeholder="Doplňující informace k vaší akci…"></textarea>
+          <textarea name="Zprava" placeholder="Doplňující informace k vaší akci…"></textarea>
         </div>
         <label class="gdpr">
           <input type="checkbox" required>
@@ -738,7 +738,7 @@
 
   // zobrazit pole Místo konání jen při volbě dopravy
   var mistoField=document.getElementById('mistoField');
-  document.querySelectorAll('input[name="Způsob předání"]').forEach(function(r){
+  document.querySelectorAll('input[name="Zpusob predani"]').forEach(function(r){
     r.addEventListener('change',function(){
       mistoField.style.display=document.getElementById('optDoprava').checked?'block':'none';
     });
@@ -748,6 +748,8 @@
     e.preventDefault();
     submitBtn.textContent='Odesílám…';submitBtn.style.opacity=.7;
     var data=new FormData(form);
+    var em=form.querySelector('input[type="email"]');
+    if(em && em.value) data.append('replyto', em.value);
     fetch('https://api.web3forms.com/submit',{method:'POST',body:data})
       .then(function(r){return r.json();})
       .then(function(res){
