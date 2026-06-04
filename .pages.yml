@@ -36,6 +36,9 @@ content:
       - name: spec_rozmer
         label: "Parametr – Rozměr"
         type: string
+      - name: spec_hmotnost
+        label: "Parametr – Hmotnost"
+        type: string
       - name: spec_cert
         label: "Parametr – Certifikace"
         type: string
