@@ -1,0 +1,15 @@
+{
+  "name": "Skákací hrady Jičín",
+  "short_name": "Skákací hrady",
+  "description": "Pronájem skákacího hradu v Jičíně a okolí.",
+  "lang": "cs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5EC572",
+  "icons": [
+    { "src": "/favicon-180.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/favicon.svg", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "hero_before": "Pronájem",
+  "hero_highlight": "skákacího hradu",
+  "hero_after": "v Jičíně a okolí",
+  "hero_lead": "Certifikovaný nafukovací hrad FARMA se skluzavkou a překážkami. Spolehlivá zábava pro dětské oslavy, obecní slavnosti i firemní akce – včetně dopravy a montáže.",
+  "product_title": "Skákací hrad FARMA se skluzavkou",
+  "product_desc": "Profesionální nafukovací atrakce kombinuje skákací plochu, překážky a skluzavku v jednom. Barevný motiv farmy se zvířátky zaujme děti na první pohled – skvěle se hodí na dětské oslavy, obecní slavnosti, školní akce, festivaly i firemní rodinné dny.",
+  "price": "6 500 Kč",
+  "price_unit": "s DPH / 1 den",
+  "price_note": "Cenu dopravy a montáže upřesníme podle místa a typu akce. Pro obce a firmy připravíme nabídku na míru.",
+  "spec_rozmer": "5,7 × 5,2 × 5 m",
+  "spec_cert": "ČSN EN 14960",
+  "spec_soucasti": "dmychadlo, vak, kotvení, dokumentace",
+  "spec_doporuceni": "děti 4–12 let, 6–8 dětí",
+  "faq": [
+    {
+      "otazka": "Kolik dětí se na hrad vejde?",
+      "odpoved": "Hrad je velký (5,7 × 5,2 m) a prostorný, takže si na něm zároveň hraje pohodlně skupina dětí. Vhodný je pro menší i větší děti – stačí přizpůsobit dohled. Doporučení výrobce uvádí 6–8 dětí ve věku 4–12 let, reálně atrakce zabaví i početnější partu."
+    },
+    {
+      "otazka": "Jaký prostor a podklad potřebuji?",
+      "odpoved": "Počítejte s rozměrem 5,7 × 5,2 × 5 m a rezervou okolo. Ideální je rovný travnatý podklad, hrad kotvíme kolíky. Jiný povrch prosím zmiňte v poptávce, poradíme řešení."
+    },
+    {
+      "otazka": "Co potřebuji k provozu?",
+      "odpoved": "Součástí je dmychadlo, které vyžaduje přívod elektřiny 230 V. Pokud elektřina není k dispozici, dejte nám vědět – nabídneme řešení."
+    },
+    {
+      "otazka": "Co když bude špatné počasí?",
+      "odpoved": "Při silném větru nebo vytrvalém dešti není provoz bezpečný. Termín v takovém případě po domluvě přesuneme."
+    },
+    {
+      "otazka": "Zajišťujete dopravu a montáž?",
+      "odpoved": "Ano, hrad dovezeme do Jičína a okolí, postavíme a po akci odvezeme. Cenu dopravy upřesníme podle vzdálenosti a typu akce."
+    }
+  ]
+}
