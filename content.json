@@ -2,13 +2,14 @@
   "hero_before": "Pronájem",
   "hero_highlight": "skákacího hradu",
   "hero_after": "v Jičíně a okolí",
-  "hero_lead": "Certifikovaný nafukovací hrad FARMA se skluzavkou a překážkami. Spolehlivá zábava pro dětské oslavy, obecní slavnosti i firemní akce – včetně dopravy a montáže.",
+  "hero_lead": "Certifikovaný nafukovací hrad FARMA se skluzavkou a překážkami. Spolehlivá zábava pro dětské oslavy, obecní slavnosti i firemní akce – dovezeme a postavíme.",
   "product_title": "Skákací hrad FARMA se skluzavkou",
   "product_desc": "Profesionální nafukovací atrakce kombinuje skákací plochu, překážky a skluzavku v jednom. Barevný motiv farmy se zvířátky zaujme děti na první pohled – skvěle se hodí na dětské oslavy, obecní slavnosti, školní akce, festivaly i firemní rodinné dny.",
-  "price": "6 500 Kč",
+  "price": "5 800 Kč",
   "price_unit": "s DPH / 1 den",
   "price_note": "Cenu dopravy upřesníme podle místa akce.",
   "spec_rozmer": "5,7 × 5,2 × 5 m",
+  "spec_hmotnost": "170 kg",
   "spec_cert": "ČSN EN 14960",
   "spec_soucasti": "dmychadlo, vak, kotvení, dokumentace",
   "spec_doporuceni": "děti 4–12 let, 6–8 dětí",
@@ -31,11 +32,11 @@
     },
     {
       "otazka": "Zajišťujete dopravu a montáž?",
-      "odpoved": "Ano, hrad dovezeme do Jičína a okolí, postavíme a po akci odvezeme. Cenu dopravy upřesníme podle vzdálenosti a typu akce."
+      "odpoved": "Ano, hrad dovezeme do Jičína a okolí, postavíme a po akci odvezeme. Montáž je v ceně pronájmu, dopravu účtujeme podle vzdálenosti."
     },
     {
       "otazka": "Kolik stojí pronájem skákacího hradu v Jičíně?",
-      "odpoved": "Skákací hrad FARMA se skluzavkou půjčujeme za 6 500 Kč s DPH na jeden den. Cena dopravy a montáže se připočítává podle vzdálenosti od Jičína. Pro obce a firmy připravíme nabídku na míru."
+      "odpoved": "Skákací hrad FARMA se skluzavkou půjčujeme za 5 800 Kč s DPH na jeden den. Montáž je v ceně, doprava se připočítává podle vzdálenosti od Jičína. Pro obce a firmy připravíme nabídku na míru."
     },
     {
       "otazka": "Kam až dovezete skákací hrad?",
